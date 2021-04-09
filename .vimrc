@@ -51,6 +51,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'preservim/nerdtree'
 Plugin 'machakann/vim-swap'
 Plugin 'mbbill/undotree'
+Plugin 'szw/vim-tags'
 
 " https://github.com/lifepillar/vim-solarized8
 "Plug 'lifepillar/vim-solarized8'
@@ -76,9 +77,10 @@ filetype plugin indent on
 " "colorscheme solarized8
 " "set background=dark
 
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
+"mapping macros using
+nnoremap Q @@
+nnoremap <C-n> :noh<CR>
 
 nnoremap <F5> :UndotreeToggle<CR>
